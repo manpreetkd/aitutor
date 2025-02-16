@@ -1,0 +1,8 @@
+[server]
+runOnSave = true
+enableStaticServing = true
+
+[theme]
+base="light"
+backgroundColor="#ebfdff"
+secondaryBackgroundColor="#ffffe2"

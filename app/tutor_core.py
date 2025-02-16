@@ -192,4 +192,3 @@ if __name__ == "__main__":
     os.system('rm -rf knowledge/*')
     os.system('rm -rf vectorstore_*')
     main()
-

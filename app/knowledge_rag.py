@@ -102,18 +102,3 @@ class KnowledgeRAG:
         except Exception as e:
             print(f"Error setting up knowledge base: {str(e)}")
             return False
-
-if __name__ == "__main__":
-    # Test the RAG implementation
-    rag = KnowledgeRAG()
-    pdf_path = "knowledge/Lesson-01.pdf"  # Ensure the PDF exists
-    vectorstore_path = "vectorstore"  # Define a persistent storage directory
-    question = "What are financial statements?"
-
-    # Setup knowledge base
-    success = rag.setup_knowledge_base(pdf_path, vectorstore_path)
-
-    # Retrieve context for a sample question
-    if success:
-        context = rag.get_relevant_context(question, vectorstore_path)
-        print("Retrieved context:", context)
