@@ -19,12 +19,10 @@ class TutorAgent:
         self.vision_processor = BlipProcessor.from_pretrained("Salesforce/blip-image-captioning-base")
 
     def extract_text_from_image(self, image_path):
-        """Extract text from an image using EasyOCR."""
         extracted_text = self.reader.readtext(image_path, detail=0)
-        return " ".join(extracted_text) if extracted_text else None  # Return None instead of an empty string
+        return " ".join(extracted_text) if extracted_text else None 
 
     def describe_image(self, image_path):
-        """Generate a caption for an image using BLIP model."""
         image = Image.open(image_path).convert("RGB")
         inputs = self.vision_processor(image, return_tensors="pt")
         caption_ids = self.vision_model.generate(**inputs)
