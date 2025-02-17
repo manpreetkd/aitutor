@@ -43,3 +43,17 @@ ollama pull llama3.2
 ```bash
 # Clone the repository
 git
+```
+
+## App Preview
+
+## Home Page
+<img width="1435" alt="home page" src="https://github.com/user-attachments/assets/879a436d-b6e9-4852-842d-77d6c542b161" />
+
+## Document-based Learning
+<img width="1435" alt="document-based learning" src="https://github.com/user-attachments/assets/d0611d37-a25d-4788-99c6-04b2af36962b" />
+
+## Image-based Learning
+<img width="1435" alt="image-based learning" src="https://github.com/user-attachments/assets/4380ede2-338a-4fd4-aa50-6d4beace1968" />
+
+
