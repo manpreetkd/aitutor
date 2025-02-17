@@ -14,7 +14,7 @@ class TutorAgent:
     def __init__(self):
         self.rag = KnowledgeRAG()
         self.vectorstore_path = "vectorstore" 
-        self.reader = easyocr.Reader(['en'])  # OCR for text extraction
+        self.reader = easyocr.Reader(['en']) 
         self.vision_model = BlipForConditionalGeneration.from_pretrained("Salesforce/blip-image-captioning-base")
         self.vision_processor = BlipProcessor.from_pretrained("Salesforce/blip-image-captioning-base")
 
